@@ -176,7 +176,7 @@ class BasicModel:
         """
         logger.info("Loading model from MLflow alias 'production'...")
 
-        model_uri = f"models:/{self.catalog_name}.{self.schema_name}.house_prices_model_basic@latest-model"
+        model_uri = f"models:/{self.catalog_name}.{self.schema_name}.hotel_reservation_model_basic@latest-model"
         model = mlflow.sklearn.load_model(model_uri)
 
         logger.info("Model Loaded successfully")
