@@ -141,7 +141,7 @@ class BasicModel:
 
         client = MlflowClient()
         client.set_registered_model_alias(
-            name=f"{self.catalog_name}.{self.schema_name}.house_prices_model_basic",
+            name=f"{self.catalog_name}.{self.schema_name}.hotel_reservation_model_basic",
             alias="latest-model",
             version=latest_version,
         )
