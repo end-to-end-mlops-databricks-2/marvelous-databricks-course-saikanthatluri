@@ -11,6 +11,7 @@ class ProjectConfig(BaseModel):
     catalog_name : str
     schema_name : str
     parameters : Dict[str, Any]
+    experiment_name_basic: str
 
     @classmethod
     def from_yaml(cls, config_path: str):
