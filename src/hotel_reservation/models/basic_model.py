@@ -114,7 +114,7 @@ class BasicModel:
             mlflow.log_metric("f1 score", f1)
 
             # log the model
-            signature = infer_signature(mode_input= self.X_train, model_output= y_pred)
+            signature = infer_signature(model_input= self.X_train, model_output= y_pred)
             dataset = mlflow.data.from_spark(
                 self.train_set_spark,
                 table_name= f"{self.catalog_name}.{self.schema_name}.train_set",
